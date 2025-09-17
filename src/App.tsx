@@ -1,10 +1,12 @@
-import { SmoothScrollHero } from "./components/Hero/Hero";
+import { HeroSection } from "./components/Hero/Hero";
+
 
 function App() {
   return (
     <>
       <div>
-        <SmoothScrollHero />
+        <HeroSection />
+       
       </div>
     </>
   );

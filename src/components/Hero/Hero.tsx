@@ -5,11 +5,9 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import { SiSpacex } from "react-icons/si";
-import { FiArrowRight, FiMapPin } from "react-icons/fi";
-import { useRef } from "react";
 
-export const SmoothScrollHero = () => {
+
+export const HeroSection = () => {
   return (
     <div className="bg-zinc-950">
       <ReactLenis
@@ -72,7 +70,7 @@ const CenterImage = () => {
   const backgroundSize = useTransform(
     scrollY,
     [0, SECTION_HEIGHT + 500],
-    ["75%", "100%"]
+    [1.3, "100%"]
   );
   const opacity = useTransform(
     scrollY,
@@ -87,9 +85,9 @@ const CenterImage = () => {
         clipPath,
         backgroundSize,
         opacity,
-        backgroundImage: "url('/public/assets/sushak.jpg')",
+        backgroundImage: "url('public/assets/sushi.gif.gif')",
 
-        backgroundPosition: "bottom",
+        backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     />
