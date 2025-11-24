@@ -92,7 +92,7 @@ const CenterImage = () => {
         backgroundSize,
         opacity,
         backgroundImage:
-          "url(../../../public/assets/sushak.jpg)",
+          "url(assets/heroChef.jpg)", // Replace with your image path
         backgroundPosition: "bottom",
         backgroundRepeat: "no-repeat",
       }}
