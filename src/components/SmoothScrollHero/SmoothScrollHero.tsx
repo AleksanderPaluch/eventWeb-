@@ -5,7 +5,9 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import logo from "../../../public/assets/logo.svg";
+import logo from "../../assets/logo.svg";
+import heroChef from "../../assets/heroChef.jpg";
+
 import { FiArrowRight } from "react-icons/fi";
 
 export const SmoothScrollHero = () => {
@@ -68,15 +70,16 @@ const Hero = () => {
 const CenterImage = () => {
   const { scrollY } = useScroll();
 
-  const clip1 = useTransform(scrollY, [0, 1500], [25, 0]);
-  const clip2 = useTransform(scrollY, [0, 1500], [75, 100]);
+const clip1 = useTransform(scrollY, [0, 1500], [15, 0]);   // instead of [25, 0]
+const clip2 = useTransform(scrollY, [0, 1500], [90, 100]); // instead of [75, 100]
+
 
   const clipPath = useMotionTemplate`polygon(${clip1}% ${clip1}%, ${clip2}% ${clip1}%, ${clip2}% ${clip2}%, ${clip1}% ${clip2}%)`;
 
   const backgroundSize = useTransform(
     scrollY,
     [0, SECTION_HEIGHT + 500],
-    ["80%", "100%"]
+    ["90%", "180%"]
   );
   const opacity = useTransform(
     scrollY,
@@ -91,8 +94,7 @@ const CenterImage = () => {
         clipPath,
         backgroundSize,
         opacity,
-        backgroundImage:
-          "url(assets/heroChef.jpg)", // Replace with your image path
+        backgroundImage: `url(${heroChef})`,
         backgroundPosition: "bottom",
         backgroundRepeat: "no-repeat",
       }}
