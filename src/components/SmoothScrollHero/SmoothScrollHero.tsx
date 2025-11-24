@@ -70,8 +70,8 @@ const Hero = () => {
 const CenterImage = () => {
   const { scrollY } = useScroll();
 
-const clip1 = useTransform(scrollY, [0, 1500], [15, 0]);   // instead of [25, 0]
-const clip2 = useTransform(scrollY, [0, 1500], [90, 100]); // instead of [75, 100]
+const clip1 = useTransform(scrollY, [0, 1500], [11, 0]);   // instead of [25, 0]
+const clip2 = useTransform(scrollY, [0, 1500], [89, 100]); // instead of [75, 100]
 
 
   const clipPath = useMotionTemplate`polygon(${clip1}% ${clip1}%, ${clip2}% ${clip1}%, ${clip2}% ${clip2}%, ${clip1}% ${clip2}%)`;
