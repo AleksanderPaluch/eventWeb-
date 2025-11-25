@@ -5,10 +5,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import logo from "../../assets/logo.svg";
-import heroChef from "../../assets/heroChef.jpg";
-
-import { FiArrowRight } from "react-icons/fi";
+import heroChef from "../../assets/heroChef2.png";
 
 export const Hero = () => {
   return (
@@ -19,37 +16,12 @@ export const Hero = () => {
           // Learn more -> https://github.com/darkroomengineering/lenis?tab=readme-ov-file#instance-settings
           lerp: 0.05,
           //   infinite: true,
-          //   syncTouch: true,
+          syncTouch: true,
         }}
       >
-        <Nav />
         <HeroImage />
-        {/* <Schedule /> */}
       </ReactLenis>
     </div>
-  );
-};
-
-const Nav = () => {
-  return (
-    <nav className="fixed left-0 right-0 top-0 z-50 flex items-center justify-between px-6 py-3 text-white">
-      <div className="flex items-center gap-2 text-lg font-bold">
-        <img className="w-6" src={logo} alt="logo" />
-        <p>EVENT CHEF</p>
-      </div>
-
-      {/* <logo className="text-3xl mix-blend-difference" /> */}
-      <button
-        onClick={() => {
-          document.getElementById("Sushi-offer")?.scrollIntoView({
-            behavior: "smooth",
-          });
-        }}
-        className="flex items-center gap-1 text-lg text-zinc-400"
-      >
-        OFERTA <FiArrowRight />
-      </button>
-    </nav>
   );
 };
 
@@ -70,16 +42,15 @@ const HeroImage = () => {
 const CenterImage = () => {
   const { scrollY } = useScroll();
 
-const clip1 = useTransform(scrollY, [0, 1500], [11, 0]);   // instead of [25, 0]
-const clip2 = useTransform(scrollY, [0, 1500], [89, 100]); // instead of [75, 100]
-
+  const clip1 = useTransform(scrollY, [0, 1500], [11, 0]); // instead of [25, 0]
+  const clip2 = useTransform(scrollY, [0, 1500], [89, 100]); // instead of [75, 100]
 
   const clipPath = useMotionTemplate`polygon(${clip1}% ${clip1}%, ${clip2}% ${clip1}%, ${clip2}% ${clip2}%, ${clip1}% ${clip2}%)`;
 
   const backgroundSize = useTransform(
     scrollY,
     [0, SECTION_HEIGHT + 500],
-    ["90%", "180%"]
+    ["70%", "140%"]
   );
   const opacity = useTransform(
     scrollY,
@@ -101,5 +72,3 @@ const clip2 = useTransform(scrollY, [0, 1500], [89, 100]); // instead of [75, 10
     />
   );
 };
-
-
