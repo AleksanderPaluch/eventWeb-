@@ -1,6 +1,7 @@
 import { Bio } from "./components/Bio/Bio";
 import { Hero } from "./components/Hero/Hero";
 import { Live } from "./components/Live/Live";
+import { Masterclass } from "./components/Masterclass/Masterclass";
 import { Nav } from "./components/Nav/Nav";
 
 function App() {
@@ -10,11 +11,7 @@ function App() {
         <Nav />
         <Hero />
         <Live />
-        <Bio />
-        <Bio />
-        <Bio />
-        <Bio />
-        <Bio />
+        <Masterclass />
         <Bio />
       </div>
     </>

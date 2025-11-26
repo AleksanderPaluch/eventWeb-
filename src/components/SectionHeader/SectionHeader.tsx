@@ -15,7 +15,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
       initial={{ y: 60, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.75 }}
-      className="mb-12 flex h-20  gap-8  font-black uppercase"
+      className="mb-12 mx-16 flex h-20  gap-8  font-black uppercase"
       style={{ flexDirection: side === "left" ? "row" : "row-reverse" }}
     >
       {/* <div className="h-[1px] w-full bg-zinc-500"></div> */}
