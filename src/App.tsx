@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <div className="bg-zinc-950">
-        <Nav />
-        <Hero />
+        {/* <Nav /> */}
+        {/* <Hero /> */}
         <Live />
         <Masterclass />
         <Bio />

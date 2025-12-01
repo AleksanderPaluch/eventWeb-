@@ -6,7 +6,7 @@ export const Bio = () => {
   return (
     <section
       id="Oferta"
-      className="h-100vh  mx-auto max-w-6xl px-4 py-48 text-zinc-50 bg-zinc-950"
+      className="h-[1000px] py-42 mx-auto max-w-6xl px-4  text-zinc-50 bg-zinc-950"
     >
       <SectionHeader title="Oferta" side="left" />
       <div className="prose grid grid-cols-1 gap-8 prose-p:my-2 w-3/5">

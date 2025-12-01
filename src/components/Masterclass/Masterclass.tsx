@@ -6,14 +6,14 @@ export const Masterclass = () => {
   return (
     <section
       id="Sushi Masterclass"
-      className="  mx-auto max-w-6xl px-4 pt-32 text-zinc-50 bg-zinc-950 flex flex-col items-end"
+      className="py-42 mx-auto max-w-6xl px-4  text-zinc-50 bg-zinc-950 flex flex-col items-end"
     >
       <SectionHeader title="Sushi Masterclass" side="right" />
 
       <div className="prose grid grid-cols-1 gap-8 prose-p:my-2 w-3/6  text-right">
         <Motion>
           {" "}
-          <p className="text-zinc-50 text-3xl ">
+          <p className="text-zinc-50 text-3xl font-semibold">
             Warsztaty, które uczą, bawią i integrują
           </p>
         </Motion>

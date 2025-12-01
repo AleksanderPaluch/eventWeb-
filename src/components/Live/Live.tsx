@@ -6,7 +6,7 @@ export const Live = () => {
   return (
     <section
       id="Live Cooking"
-      className="mx-auto max-w-6xl px-4 pt-32 text-zinc-50 bg-zinc-950"
+      className="py-42 mx-auto max-w-6xl px-4  text-zinc-50 bg-zinc-950"
     >
       <SectionHeader title="sushi LIVE COOKING" side="left" />
 
@@ -14,7 +14,7 @@ export const Live = () => {
         {" "}
         <Motion>
           {" "}
-          <p className="text-zinc-50 text-3xl ">
+          <p className="text-zinc-50 text-3xl font-semibold  ">
             Wyjątkowe doświadczenie kulinarne na <br /> Twoim wydarzeniu
           </p>
         </Motion>
@@ -28,7 +28,7 @@ export const Live = () => {
           </p>
         </Motion>
       </div>
-      <div className=" grid my-32 md:grid-cols-2 gap-16  ">
+      <div className=" grid mt-32 md:grid-cols-2 gap-16  ">
         <div className="">
           <Motion>
             {" "}

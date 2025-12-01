@@ -1,29 +1,5 @@
 import logo from "../../assets/logo.svg";
 
-// export const Nav = () => {
-//   return (
-//     <nav className="fixed left-0 right-0 top-0 z-50 flex items-center justify-between px-6 py-3 h-16 text-white">
-//       <div className="flex items-center gap-2 text-lg font-bold">
-//         <img className="w-8" src={logo} alt="logo" />
-//         <p>EVENT CHEF</p>
-//       </div>
-
-//       {/* <logo className="text-3xl mix-blend-difference" /> */}
-//       <button
-//         onClick={() => {
-//           document.getElementById("Sushi-offer")?.scrollIntoView({
-//             behavior: "smooth",
-//           });
-//         }}
-//         className="flex items-center gap-1  text-lg font-bold text-zinc-400"
-//       >
-//         <p>OFERTA</p>
-//         <FiArrowRight className="h-24" />
-//       </button>
-//     </nav>
-//   );
-// };
-
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu, FiArrowRight } from "react-icons/fi";
@@ -31,7 +7,7 @@ import { FiMenu, FiArrowRight } from "react-icons/fi";
 export const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-zinc-950 p-4  flex items-center justify-between fixed left-0 right-0 top-0 z-50">
+    <nav className=" py-1 px-4 z-10 flex items-center justify-between fixed left-0 right-0 top-0  backdrop-blur">
       <NavLeft setIsOpen={setIsOpen} />
       <NavRight />
       <NavMenu isOpen={isOpen} />
@@ -39,13 +15,11 @@ export const Nav = () => {
   );
 };
 
-
-
 const NavLeft = ({ setIsOpen }) => {
   return (
     <div className="flex items-center gap-6">
       <motion.button
-        whileHover={{ scale: 1.10 }}
+        whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         className="block lg:hidden text-zinc-50 text-2xl"
         onClick={() => setIsOpen((pv) => !pv)}
@@ -70,9 +44,7 @@ const NavLink = ({ text }) => {
     >
       <motion.div whileHover={{ y: -30 }}>
         <span className="flex items-center h-[30px] text-zinc-400">{text}</span>
-        <span className="flex items-center h-[30px] text-zinc-50">
-          {text}
-        </span>
+        <span className="flex items-center h-[30px] text-zinc-50">{text}</span>
       </motion.div>
     </a>
   );
