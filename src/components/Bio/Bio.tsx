@@ -5,7 +5,7 @@ import { Motion } from "../Motion/Motion";
 export const Bio = () => {
   return (
     <section
-      id="Sushi-offer"
+      id="Oferta"
       className="h-100vh  mx-auto max-w-6xl px-4 py-48 text-zinc-50 bg-zinc-950"
     >
       <SectionHeader title="Oferta" side="left" />

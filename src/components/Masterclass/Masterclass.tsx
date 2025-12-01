@@ -5,7 +5,7 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 export const Masterclass = () => {
   return (
     <section
-      id="Masterclass"
+      id="Sushi Masterclass"
       className="  mx-auto max-w-6xl px-4 pt-32 text-zinc-50 bg-zinc-950 flex flex-col items-end"
     >
       <SectionHeader title="Sushi Masterclass" side="right" />

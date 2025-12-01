@@ -5,7 +5,7 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 export const Live = () => {
   return (
     <section
-      id="Live"
+      id="Live Cooking"
       className="mx-auto max-w-6xl px-4 pt-32 text-zinc-50 bg-zinc-950"
     >
       <SectionHeader title="sushi LIVE COOKING" side="left" />
