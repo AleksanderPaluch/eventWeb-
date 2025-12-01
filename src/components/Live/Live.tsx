@@ -1,18 +1,11 @@
+import { Chip } from "../Chip/Chip";
 import { Motion } from "../Motion/Motion";
 import SectionHeader from "../SectionHeader/SectionHeader";
-
-const Chip = ({ children }) => {
-  return (
-    <span className="rounded bg-zinc-800 px-4 py-2 text-xl font-semibold text-white uppercase ">
-      {children}
-    </span>
-  );
-};
 
 export const Live = () => {
   return (
     <section
-      id="Sushi-offer"
+      id="Live"
       className="mx-auto max-w-6xl px-4 pt-32 text-zinc-50 bg-zinc-950"
     >
       <SectionHeader title="sushi LIVE COOKING" side="left" />
@@ -21,7 +14,7 @@ export const Live = () => {
         {" "}
         <Motion>
           {" "}
-          <p className="text-zinc-50 text-2xl ">
+          <p className="text-zinc-50 text-3xl ">
             Wyjątkowe doświadczenie kulinarne na <br /> Twoim wydarzeniu
           </p>
         </Motion>
@@ -35,11 +28,11 @@ export const Live = () => {
           </p>
         </Motion>
       </div>
-      <div className=" grid my-18 md:grid-cols-2 gap-8  ">
+      <div className=" grid my-32 md:grid-cols-2 gap-16  ">
         <div className="">
           <Motion>
             {" "}
-            <p className="text-3xl font-bold">DLA FIRM</p>
+            <p className="text-3xl mb-6 font-bold">DLA FIRM</p>
           </Motion>
           <Motion>
             {" "}
@@ -58,7 +51,7 @@ export const Live = () => {
         <div className="">
           <Motion>
             {" "}
-            <p className="text-3xl font-bold">DLA KLIENTÓW PRYWATNYCH</p>
+            <p className="text-3xl  mb-6  font-bold">DLA KLIENTÓW PRYWATNYCH</p>
           </Motion>
           <Motion>
             {" "}

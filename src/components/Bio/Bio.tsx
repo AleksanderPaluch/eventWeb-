@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
 import SectionHeader from "../SectionHeader/SectionHeader";
-import Reveal from "../Reveal/Reveal";
+
+import { Motion } from "../Motion/Motion";
 
 export const Bio = () => {
   return (
@@ -10,30 +10,30 @@ export const Bio = () => {
     >
       <SectionHeader title="Oferta" side="left" />
       <div className="prose grid grid-cols-1 gap-8 prose-p:my-2 w-3/5">
-        <Reveal>
+        <Motion>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
             aliquid fuga error laudantium deserunt aliquam mollitia sint, maxime
             obcaecati illum! Tempora quidem dolor odit atque possimus, iusto
             perferendis dolores! Aliquid.
           </p>
-        </Reveal>
-                <Reveal>
+        </Motion>
+        <Motion>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
             aliquid fuga error laudantium deserunt aliquam mollitia sint, maxime
             obcaecati illum! Tempora quidem dolor odit atque possimus, iusto
             perferendis dolores! Aliquid.
           </p>
-        </Reveal>
-                <Reveal>
+        </Motion>
+        <Motion>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
             aliquid fuga error laudantium deserunt aliquam mollitia sint, maxime
             obcaecati illum! Tempora quidem dolor odit atque possimus, iusto
             perferendis dolores! Aliquid.
           </p>
-        </Reveal>
+        </Motion>
       </div>
     </section>
   );
