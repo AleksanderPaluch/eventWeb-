@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div className="bg-zinc-950">
-        {/* <Nav /> */}
+        <Nav />
         {/* <Hero /> */}
         <Live />
         <Masterclass />

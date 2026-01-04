@@ -3,7 +3,7 @@ import { Motion } from "../Motion/Motion";
 export const PricingTable = () => {
   return (
     <>
-      <table className="w-full border border-zinc-800 text-left text-zinc-100">
+      <table className="w-full mx-auto border border-zinc-800 text-left text-zinc-100">
         <thead className="bg-zinc-900 text-sm uppercase tracking-wide text-zinc-300">
           <tr className="text-lg font-semibold">
             <th className="px-6 py-4 ">Liczba osób</th>
@@ -51,7 +51,7 @@ export const PricingTable = () => {
       </Motion>
 
       <Motion>
-        <p className=" text-lg text-zinc-50 my-8 font-semibold">
+        <p className=" text-lg text-zinc-300">
           Live Cooking i Sushi Masterclass wyceniane są w ten sam sposób —{" "}
           <br />
           różnią się formą, ale bazują na tych samych składnikach i jakości
