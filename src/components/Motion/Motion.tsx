@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 
-export const Motion = ({children}) => {
+interface MotionProps {
+  children: React.ReactNode;
+}
+
+
+
+export const Motion: React.FC<MotionProps> = ({ children }) => {
   return (
     <motion.div
       initial={{ y: 60, opacity: 0 }}

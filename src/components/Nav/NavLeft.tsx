@@ -3,7 +3,7 @@ import logo from "../../assets/logo.svg";
 import { FiMenu } from "react-icons/fi";
 
 interface NavLeftProps {
-  setIsOpen: (isOpen: boolean) => void;
+    setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 interface NavLinkProps {
@@ -17,7 +17,7 @@ export const NavLeft: React.FC<NavLeftProps> = ({ setIsOpen }) => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         className="block lg:hidden text-zinc-50 text-2xl"
-        onClick={() => setIsOpen((pv) => !pv)}
+        onClick={() => setIsOpen(pv => !pv)}
       >
         <FiMenu />
       </motion.button>

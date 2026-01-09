@@ -1,7 +1,8 @@
 import SectionHeader from "../SectionHeader/SectionHeader";
 
 import { Motion } from "../Motion/Motion";
-import { PricingTable } from "./table";
+import { PricingTable } from "./Table";
+
 
 export const Offer = () => {
   return (
