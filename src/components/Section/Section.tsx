@@ -4,6 +4,7 @@ import { SectionHeader } from "./SectionHeader";
 
 interface SectionProps {
   id: string;
+  side: "left" | "right";
   title: string;
   header: string;
   text: string;
@@ -15,6 +16,7 @@ interface SectionProps {
 
 export const Section: React.FC<SectionProps> = ({
   id,
+  side,
   title,
   header,
   text,
@@ -28,23 +30,23 @@ export const Section: React.FC<SectionProps> = ({
       id={id}
       className="pt-12 pb-42 mx-auto max-w-6xl px-4 text-zinc-50 bg-zinc-950"
     >
-      <SectionHeader title={header} side="right" />
+      <SectionHeader title={header} side={side} />
 
       {/* TEXT */}
-      <div className="prose grid grid-cols-1 gap-8 prose-p:my-2 w-3/6 text-right ml-auto">
+      <div className="prose grid grid-cols-1 gap-8 prose-p:my-2  ">
         <Motion>
           <p className="text-3xl font-semibold">{title}</p>
         </Motion>
         <Motion>
-          <p className="text-xl w-4/5 ml-auto">{text}</p>
+          <p className="text-xl  ">{text}</p>
         </Motion>
       </div>
 
       {/* PRIMARY CHIPS */}
 
-      <div   className={secondaryChipsTitle ? " mt-32 grid grid-cols-2 gap-8" : "mt-32"}>
+      <div   className={secondaryChipsTitle ? " my-32 grid grid-cols-2 gap-8" : "my-32"}>
         {chipsTitle && chips && (
-          <div className="my-32">
+          <div className="">
             <Motion>
               <p className="text-3xl mb-6 font-bold uppercase">{chipsTitle}</p>
             </Motion>
@@ -61,7 +63,7 @@ export const Section: React.FC<SectionProps> = ({
 
         {/* SECONDARY CHIPS */}
         {secondaryChipsTitle && secondaryChips && (
-          <div className="mt-32">
+          <div className="">
             <Motion>
               <p className="text-3xl mb-6 font-bold">{secondaryChipsTitle}</p>
             </Motion>

@@ -22,8 +22,8 @@ export const NavLeft: React.FC<NavLeftProps> = ({ setIsOpen }) => {
         <FiMenu />
       </motion.button>
       <img src={logo} alt="logo" className="w-8 h-8" />
-      <NavLink text="Live Cooking" />
-      <NavLink text="Sushi Masterclass" />
+      <NavLink text="Live" />
+      <NavLink text="Masterclass" />
       <NavLink text="Oferta" />
       <NavLink text="O nas" />
     </div>
