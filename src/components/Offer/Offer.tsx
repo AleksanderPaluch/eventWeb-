@@ -1,6 +1,7 @@
-import SectionHeader from "../SectionHeader/SectionHeader";
+
 
 import { Motion } from "../Motion/Motion";
+import { SectionHeader } from "../Section/SectionHeader";
 import { PricingTable } from "./Table";
 
 
@@ -8,7 +9,7 @@ export const Offer = () => {
   return (
     <section
       id="Oferta"
-      className="py-42 mx-auto max-w-6xl px-4 text-zinc-50 bg-zinc-950"
+      className="pt-10 pb-42 mx-auto max-w-6xl px-4 text-zinc-50 bg-zinc-950"
     >
       <SectionHeader title="Oferta" side="left" />
 

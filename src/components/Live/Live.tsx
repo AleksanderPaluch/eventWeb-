@@ -1,71 +1,20 @@
-import { Chip } from "../Chip/Chip";
-import { Motion } from "../Motion/Motion";
-import SectionHeader from "../SectionHeader/SectionHeader";
+
+import { Section } from "../Section/Section";
+
+
+const data = {
+  id: "Live Cooking",
+  title: "Wyjątkowe doświadczenie kulinarne na Twoim wydarzeniu",
+  header: "Sushi Live Cooking",
+  text: "Live cooking to pokaz przygotowywania sushi na żywo, prosto przed Twoimi gośćmi. To połączenie gotowania, zabawy i efektownego show, które tworzy wyjątkową atmosferę. Dzięki temu każde wydarzenie staje się ciekawsze, pełne energii i zapada w pamięć.",
+  chipsTitle: "DLA FIRM",
+  chips: ["Eventy firmowe", "Targi", "Konferencje", "Wigilie", "Gale", "Premiery produktów"],
+  secondaryChipsTitle: "DLA OSÓB PRYWATNYCH",
+  secondaryChips: ["Wesela", "Urodziny", "Domówki", "Wieczory panieńskie", "Garden party"],
+};
 
 export const Live = () => {
   return (
-    <section
-      id="Live Cooking"
-      className="py-42 mx-auto max-w-6xl px-4  text-zinc-50 bg-zinc-950"
-    >
-      <SectionHeader title="sushi LIVE COOKING" side="left" />
-
-      <div className="prose grid grid-cols-1 gap-8 prose-p:my-2 w-3/5">
-        {" "}
-        <Motion>
-          {" "}
-          <p className="text-zinc-50 text-3xl font-semibold  ">
-            Wyjątkowe doświadczenie kulinarne na <br /> Twoim wydarzeniu
-          </p>
-        </Motion>
-        <Motion>
-          {" "}
-          <p className="text-zinc-50 text-xl w-3/4">
-            Live cooking to pokaz przygotowywania sushi na żywo, prosto przed
-            Twoimi gośćmi. To połączenie gotowania, zabawy i efektownego show,
-            które tworzy wyjątkową atmosferę. Dzięki temu każde wydarzenie staje
-            się ciekawsze, pełne energii i zapada w pamięć.
-          </p>
-        </Motion>
-      </div>
-      <div className=" grid mt-32 md:grid-cols-2 gap-16  ">
-        <div className="">
-          <Motion>
-            {" "}
-            <p className="text-3xl mb-6 font-bold">DLA FIRM</p>
-          </Motion>
-          <Motion>
-            {" "}
-            <div className="mt-4 flex flex-wrap gap-2">
-              {" "}
-              <Chip>Eventy firmowe</Chip>
-              <Chip>Targi</Chip>
-              <Chip>Konferencje</Chip>
-              <Chip>Wigilie</Chip>
-              <Chip>Gale</Chip>
-              <Chip>Premiery produktów</Chip>
-            </div>{" "}
-          </Motion>
-        </div>
-
-        <div className="">
-          <Motion>
-            {" "}
-            <p className="text-3xl  mb-6  font-bold">DLA KLIENTÓW PRYWATNYCH</p>
-          </Motion>
-          <Motion>
-            {" "}
-            <div className="mt-4 flex flex-wrap gap-2">
-              {" "}
-              <Chip>Wesela</Chip>
-              <Chip>Urodziny</Chip>
-              <Chip>Domówki</Chip>
-              <Chip>Wieczory panieńskie</Chip>
-              <Chip>Garden party</Chip>
-            </div>
-          </Motion>
-        </div>
-      </div>
-    </section>
+    <Section id={data.id} title={data.title} header={data.header} text={data.text} chipsTitle={data.chipsTitle} chips={data.chips} secondaryChipsTitle={data.secondaryChipsTitle} secondaryChips={data.secondaryChips} />
   );
 };

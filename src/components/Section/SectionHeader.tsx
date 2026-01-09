@@ -6,7 +6,7 @@ interface SectionHeaderProps {
   side?: "left" | "right";
 }
 
-const SectionHeader: React.FC<SectionHeaderProps> = ({
+export const SectionHeader: React.FC<SectionHeaderProps> = ({
   title,
   side = "left",
 }) => {
@@ -15,7 +15,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
       initial={{ y: 60, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.75 }}
-      className="mb-16  flex h-20  gap-8  font-black uppercase"
+      className="mb-16 flex h-20 gap-8 font-black uppercase"
       style={{ flexDirection: side === "left" ? "row" : "row-reverse" }}
     >
     
@@ -30,4 +30,4 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   );
 };
 
-export default SectionHeader;
+

@@ -50,14 +50,14 @@ export const PricingTable = () => {
         </p>
       </Motion>
 
-      <Motion>
+      {/* <Motion>
         <p className=" text-lg text-zinc-300">
           Live Cooking i Sushi Masterclass wyceniane są w ten sam sposób —{" "}
           <br />
           różnią się formą, ale bazują na tych samych składnikach i jakości
           obsługi.
         </p>
-      </Motion>
+      </Motion> */}
     </>
   );
 };
