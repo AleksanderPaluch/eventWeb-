@@ -28,7 +28,7 @@ export const Section: React.FC<SectionProps> = ({
   return (
     <section
       id={id}
-      className="pt-12 pb-42 mx-auto max-w-6xl px-4 text-zinc-50 bg-zinc-950"
+      className="pt-16 pb-42 mx-auto max-w-6xl px-4 text-zinc-50 bg-zinc-950"
     >
       <SectionHeader title={header} side={side} />
 
@@ -38,13 +38,13 @@ export const Section: React.FC<SectionProps> = ({
           <p className="text-3xl font-semibold">{title}</p>
         </Motion>
         <Motion>
-          <p className="text-xl  ">{text}</p>
+          <p className="text-xl  lg:w-3/5">{text}</p>
         </Motion>
       </div>
 
       {/* PRIMARY CHIPS */}
 
-      <div   className={secondaryChipsTitle ? " my-32 grid grid-cols-2 gap-8" : "my-32"}>
+      <div   className={secondaryChipsTitle ? " my-32 grid md:grid-cols-2 gap-8" : "my-32"}>
         {chipsTitle && chips && (
           <div className="">
             <Motion>

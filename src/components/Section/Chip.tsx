@@ -6,7 +6,7 @@ interface ChipProps {
 
 export const Chip: React.FC<ChipProps> = ({ children }) => {
   return (
-    <span className="rounded bg-zinc-900 px-5 py-2 text-xl font-semibold text-white uppercase ">
+    <span className="rounded bg-zinc-800 text-sm px-2 py-1  md:px-5 md:py-2  md:text-xl font-semibold uppercase ">
       {children}
     </span>
   );
