@@ -1,6 +1,6 @@
-import { Chip } from "./Chip";
-import { Motion } from "../Motion/Motion";
 import { SectionHeader } from "./SectionHeader";
+import { SectionText } from "./SectionText";
+import { SectionChips } from "./SectionChips";
 
 interface SectionProps {
   id: string;
@@ -33,55 +33,14 @@ export const Section: React.FC<SectionProps> = ({
       className="pt-16 pb-42 mx-auto max-w-6xl px-4 text-zinc-50 bg-zinc-950"
     >
       <SectionHeader title={header} side={side} />
-
-      {/* TEXT */}
-      <div className="prose grid grid-cols-1 gap-8 prose-p:my-2  ">
-        <Motion>
-          <p className="text-3xl font-semibold">{title}</p>
-        </Motion>
-        <Motion>
-          <p className="text-xl  lg:w-3/5">{text}</p>
-        </Motion>
-      </div>
-
-      {/* TABLE */}
+      <SectionText title={title} text={text} />
       {table && <div className="mt-16">{table}</div>}
-
-      {/* PRIMARY CHIPS */}
-
-      <div   className={secondaryChipsTitle ? " my-32 grid md:grid-cols-2 gap-8" : "my-32"}>
-        {chipsTitle && chips && (
-          <div className="">
-            <Motion>
-              <p className="text-3xl mb-6 font-bold uppercase">{chipsTitle}</p>
-            </Motion>
-
-            <Motion>
-              <div className="mt-4 flex flex-wrap gap-2 ">
-                {chips.map((chip, index) => (
-                  <Chip key={index}>{chip}</Chip>
-                ))}
-              </div>
-            </Motion>
-          </div>
-        )}
-
-        {/* SECONDARY CHIPS */}
-        {secondaryChipsTitle && secondaryChips && (
-          <div className="">
-            <Motion>
-              <p className="text-3xl mb-6 font-bold">{secondaryChipsTitle}</p>
-            </Motion>
-            <Motion>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {secondaryChips.map((chip, index) => (
-                  <Chip key={index}>{chip}</Chip>
-                ))}
-              </div>
-            </Motion>
-          </div>
-        )}
-      </div>
+      <SectionChips
+        chipsTitle={chipsTitle}
+        chips={chips}
+        secondaryChipsTitle={secondaryChipsTitle}
+        secondaryChips={secondaryChips}
+      />
     </section>
   );
 };
