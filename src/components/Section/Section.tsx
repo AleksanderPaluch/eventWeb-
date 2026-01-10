@@ -5,9 +5,10 @@ import { SectionHeader } from "./SectionHeader";
 interface SectionProps {
   id: string;
   side: "left" | "right";
-  title: string;
+  title?: string;
   header: string;
-  text: string;
+  text?: string;
+  table?: React.ReactNode;
   chipsTitle?: string;
   chips?: string[];
   secondaryChipsTitle?: string;
@@ -20,6 +21,7 @@ export const Section: React.FC<SectionProps> = ({
   title,
   header,
   text,
+  table,
   chipsTitle,
   chips,
   secondaryChipsTitle,
@@ -41,6 +43,9 @@ export const Section: React.FC<SectionProps> = ({
           <p className="text-xl  lg:w-3/5">{text}</p>
         </Motion>
       </div>
+
+      {/* TABLE */}
+      {table && <div className="mt-16">{table}</div>}
 
       {/* PRIMARY CHIPS */}
 
