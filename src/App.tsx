@@ -8,13 +8,13 @@ import { Omakase } from "./components/Omakase/Omakase";
 function App() {
   return (
     <>
-      <div className="bg-zinc-950 ">
+      <div className="bg-zinc-950  ">
         <Nav />
         {/* <Hero /> */}
         <Live />
         <Masterclass />
         <Omakase />
-        <Offer />
+        {/* <Offer /> */}
       </div>
     </>
   );
