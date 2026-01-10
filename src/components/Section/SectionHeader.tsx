@@ -23,7 +23,7 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
       <h2>
         <p className=" text-end min-w-32 md:min-w-48 py-2 text-3xl font-black md:text-5xl">
           {title}
-          <span className="text-zinc-500">.</span>
+          <span className="text-zinc-700">.</span>
         </p>
       </h2>
     </motion.div>

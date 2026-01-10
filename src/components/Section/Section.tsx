@@ -33,7 +33,7 @@ export const Section: React.FC<SectionProps> = ({
       className="py-12 md:pb-32 md:pt-24 mx-auto max-w-6xl px-4 text-zinc-100 "
     >
       <SectionHeader title={header} side={side} />
-      <SectionText title={title} text={text} />
+      <SectionText title={title} text={text} side={side} />
       {table && <div className="mt-16">{table}</div>}
       <SectionChips
         chipsTitle={chipsTitle}
