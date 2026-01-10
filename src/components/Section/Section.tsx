@@ -30,7 +30,7 @@ export const Section: React.FC<SectionProps> = ({
   return (
     <section
       id={id}
-      className="py-12 md:py-32 mx-auto max-w-6xl px-4 text-zinc-100 "
+      className="py-12 md:pb-32 md:pt-24 mx-auto max-w-6xl px-4 text-zinc-100 "
     >
       <SectionHeader title={header} side={side} />
       <SectionText title={title} text={text} />

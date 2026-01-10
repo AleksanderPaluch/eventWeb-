@@ -2,7 +2,7 @@ import { Section } from "../Section/Section";
 import { PricingTable } from "./Table";
 
 const data = {
-  id: "Oferta",
+   id: "Oferta",
   side: "left" as const,
   header: "Oferta",
    title: "Sushi Live Cooking & Masterclass",

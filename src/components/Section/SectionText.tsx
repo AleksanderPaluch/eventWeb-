@@ -7,7 +7,7 @@ export const SectionText = ({ title, text }) => {
           <p className="text-3xl font-semibold">{title}</p>
         </Motion>
         <Motion>
-          <p className="text-xl  lg:w-3/5">{text}</p>
+          <p className="text-lg lg:w-1/2 text-zinc-300">{text}</p>
         </Motion>
       </div>
   )

@@ -6,7 +6,7 @@ const data = {
   title: "Omakase",
   header: "sushi OMAKASE",
   text: "Omakase to wyjątkowe doświadczenie kulinarne, które pozwala Ci zaufać szefowi kuchni i cieszyć się starannie dobranym menu. W dosłownym tłumaczeniu z japońskiego oznacza 'powierzyć się' lub 'zostawić w rękach szefa kuchni'. To filozofia jedzenia, która podkreśla kreatywność, sezonowość i najwyższą jakość składników. Wybierając Omakase, pozwalasz szefowi kuchni stworzyć dla Ciebie niezapomnianą podróż smaków, dostosowaną do Twoich preferencji i aktualnych trendów kulinarnych.",
-  chipsTitle: "DLACZEGO OMAKASE?",
+  chipsTitle: "Dlaczego Omakase?",
   chips: ["Unikalne doświadczenie kulinarne", "Sezonowe i świeże składniki"],
 };
 

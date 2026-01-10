@@ -14,7 +14,7 @@ function App() {
         <Live />
         <Masterclass />
         <Omakase />
-        {/* <Offer /> */}
+        <Offer />
       </div>
     </>
   );

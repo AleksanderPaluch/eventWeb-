@@ -6,7 +6,7 @@ const data = {
   title: "Wyjątkowe doświadczenie kulinarne na Twoim wydarzeniu",
   header: "Sushi Live Cooking",
   text: "Live cooking to pokaz przygotowywania sushi na żywo, prosto przed Twoimi gośćmi. To połączenie gotowania, zabawy i efektownego show, które tworzy wyjątkową atmosferę. Dzięki temu każde wydarzenie staje się ciekawsze, pełne energii i zapada w pamięć.",
-  chipsTitle: "DLA FIRM",
+  chipsTitle: "Dla Firm",
   chips: [
     "Eventy firmowe",
     "Targi",
@@ -15,7 +15,7 @@ const data = {
     "Gale",
     "Premiery produktów",
   ],
-  secondaryChipsTitle: "DLA OSÓB PRYWATNYCH",
+  secondaryChipsTitle: "Dla Osób Prywatnych",
   secondaryChips: [
     "Wesela",
     "Urodziny",
